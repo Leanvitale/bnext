@@ -37,7 +37,8 @@
         
         <div class="form-group col-12">
             <label for="exampleInputEmail1">Importe de Préstamo <span>*</span></label>
-            <input type="number" class="form-control" formControlName="loan_amount">
+            <input type="number" class="form-control" formControlName="loan_amount" [ngClass]="{'rojo': !formUser.controls.loan_amount.valid}">
+            <small id="emailHelp" class="form-text text-muted">Más de $10 y hasta $1.000</small>
         </div>
     
         <div class="form-group col-12">
