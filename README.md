@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
+## Información sobre rutas
+
+Lista de rutas a probar:
+`http://localhost:4200/{1 o 2}` -> Obtienes la información del Usuario para modificar
+Cualquier otro valor que ingrese lo va a enviar a la pagina de Usuario no Existente `http://localhost:4200/no-user`.
+En caso de que la modificación sea exitosa, se redirecciona al la ruta `http://localhost:4200/gracias`.
+Si en el proceso de modificación surge algun error, se redirecciona a la ruta `http://localhost:4200/error`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
