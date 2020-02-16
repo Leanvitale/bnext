@@ -1,0 +1,17 @@
+<div class="bg text-center">
+    <h1>¡Gracias!</h1>
+    <p>Datos enviados con éxito</p>
+    <ul>
+        <li><b>Nombre Completo:</b> {{ user.name }} {{ user.surname }}</li>
+        <li><b>Email:</b> {{ user.email }}</li>
+        <li><b>Teléfono:</b> {{ user.phone }}</li>
+        <li><b>Edad:</b> {{ user.age }}</li>
+        <li><b>Importe del Préstamo:</b> ${{ user.loan_amount }}</li>
+        <li><b>Fecha para conseguirlo:</b> {{ user.loan_date | date: 'yyyy-MM-dd' }}</li>
+        <li><b>Tiempo de Devolución:</b> {{ user.loan_weeks }} Semanas</li>
+    </ul>
+    <p>En breve nos pondremos en contacto.</p>
+
+    <img src="https://i.imgur.com/LW0kgNH.png" class="img-logo">
+
+</div>
